@@ -1,16 +1,18 @@
 # AmericanBinary
 
-**AmericanBinary** computes the value of American binary (a.k.a. digital) calls and puts assuming that the underlying follows a Geometric Brownian motion:
+**AmericanBinary** computes the value of American binary (a.k.a. digital) calls and puts.
+
+AmericanBinary is written by [Parsiad Azimzadeh](http://parsiad.ca) and released under a BSD 2-clause license.
+
+## Methodology
+
+We assume that the asset follows a geometric Brownian motion:
 
 dS = (Rate - Yield) dt + Volatility dW
 
 An American binary call is an option which can be exercised at any time, having an exercise value 1 if S > Strike and exercise value 0 otherwise.
 
 An American binary put is defined similarly.
-
-## Methodology
-
-The routine uses a closed-form solution for the price. By virtue of this, there is no discretization error.
 
 ## Usage
 
@@ -46,3 +48,5 @@ xlabel('Asset price');
 ylabel('Option value');
 title('American binary put');
 ```
+
+![](https://raw.githubusercontent.com/parsiad/AmericanBinary/master/put.png)
