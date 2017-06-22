@@ -10,9 +10,9 @@ We assume that the asset follows a geometric Brownian motion:
 
 dS = (Rate - Yield) dt + Volatility dW
 
-An American binary call is an option which can be exercised at any time, having an exercise value 1 if S > Strike and exercise value 0 otherwise.
+An American binary call is an option which can be exercised at any time, having an exercise value 1 if S > Strike and exercise value 0 otherwise. An American binary put is defined similarly.
 
-An American binary put is defined similarly.
+The derivation of the closed-form expression for the value of the American binary call and put are [here](https://github.com/parsiad/AmericanBinary/raw/master/derivation.pdf).
 
 ## Usage
 
